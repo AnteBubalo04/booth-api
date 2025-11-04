@@ -1,0 +1,6 @@
+@Booth.API_HostAddress = http://localhost:5111
+
+GET {{Booth.API_HostAddress}}
+Accept: application/json
+
+###
