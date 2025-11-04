@@ -1,6 +1,10 @@
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(8080); // Render zahtijeva ovaj port
+});
 
 builder.Services.AddControllers();
 
